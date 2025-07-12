@@ -1,0 +1,5 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.5894,0.6928,0.004227,7035.36,fuzzy,google_amazon
+sentence-transformers/all-MiniLM-L6-v2,0.5808,0.7216,0.005583,7035.36,cosine,google_amazon
+microsoft/Phi-3-mini-128k-instruct,0.0,0.0,0.001667,7035.36,cosine,google_amazon
+google/gemma-2b-it,0.4764,0.5971,0.01677,7059.07,cosine,google_amazon

@@ -1,0 +1,7 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.2949,0.4148,0.239458,6054.11,fuzzy,amazon_itunes
+nomic-ai/nomic-embed-text-v2-moe,0.0,0.0,0.03485,6053.12,cosine,amazon_itunes
+nomic-embed-text,0.0,0.0,0.005676,6053.12,cosine,amazon_itunes
+phi3,0.0,0.0,0.006244,6053.12,cosine,amazon_itunes
+phi4,0.0,0.0,0.006431,6053.12,cosine,amazon_itunes
+gemma2,0.0,0.0,0.006132,6053.12,cosine,amazon_itunes

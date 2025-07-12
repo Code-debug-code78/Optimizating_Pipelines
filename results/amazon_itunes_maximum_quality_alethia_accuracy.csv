@@ -1,0 +1,8 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.2949,0.4148,0.237415,3185.64,fuzzy,amazon_itunes
+Salesforce/SFR-Embedding-2_R,0.4615,0.6507,10.608347,3452.89,cosine,amazon_itunes
+Salesforce/SFR-Embedding-Mistral,0.4744,0.651,10.617073,3571.77,cosine,amazon_itunes
+Alibaba-NLP/gte-Qwen2-7B-instruct,0.5769,0.7276,10.636113,4485.28,cosine,amazon_itunes
+Qwen/Qwen2-7B-Instruct,0.0641,0.0876,9.175212,4490.72,cosine,amazon_itunes
+intfloat/e5-mistral-7b-instruct,0.4872,0.6479,10.552304,4492.51,cosine,amazon_itunes
+microsoft/Phi-4-mini-instruct,0.2308,0.2863,17.188077,4489.56,cosine,amazon_itunes

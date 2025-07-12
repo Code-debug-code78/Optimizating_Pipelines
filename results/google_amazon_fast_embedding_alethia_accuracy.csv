@@ -1,0 +1,7 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.5894,0.6928,0.004255,7199.51,fuzzy,google_amazon
+BAAI/bge-small-en-v1.5,0.6037,0.7373,0.005813,7199.51,cosine,google_amazon
+sentence-transformers/all-MiniLM-L6-v2,0.5808,0.7216,0.005099,7199.51,cosine,google_amazon
+jinaai/jina-embeddings-v2-small-en,0.3948,0.5069,0.005507,7199.71,cosine,google_amazon
+snowflake/snowflake-arctic-embed-s,0.6209,0.7485,0.009128,7199.72,cosine,google_amazon
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,0.5823,0.7143,0.007094,7203.55,cosine,google_amazon

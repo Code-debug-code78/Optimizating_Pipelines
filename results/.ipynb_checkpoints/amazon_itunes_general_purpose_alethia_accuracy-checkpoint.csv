@@ -1,0 +1,5 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.2949,0.4148,0.24049,900.27,fuzzy,amazon_itunes
+mixedbread-ai/mxbai-embed-large-v1,0.4744,0.6483,1.782201,2392.83,cosine,amazon_itunes
+Alibaba-NLP/gte-Qwen2-1.5B-instruct,0.5897,0.7305,2.248774,2716.76,cosine,amazon_itunes
+google/gemma-2b-it,0.2692,0.4288,3.02902,2882.7,cosine,amazon_itunes

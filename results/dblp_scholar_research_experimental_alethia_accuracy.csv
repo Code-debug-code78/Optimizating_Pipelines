@@ -1,0 +1,3 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.4353,0.6171,0.196282,7312.95,fuzzy,dblp_scholar
+GritLM/GritLM-7B,0.4319,0.5976,0.225894,8104.62,cosine,dblp_scholar

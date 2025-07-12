@@ -1,0 +1,7 @@
+model_name,top1_accuracy,mrr_score,avg_inference_time,memory_usage_mb,method,dataset_name
+rapidfuzz,0.5894,0.6928,0.004246,7059.07,fuzzy,google_amazon
+intfloat/multilingual-e5-large-instruct,0.5608,0.6929,0.015431,7734.76,cosine,google_amazon
+Alibaba-NLP/gte-Qwen2-7B-instruct,0.6066,0.7357,0.05474,7199.66,cosine,google_amazon
+Qwen/Qwen2-7B-Instruct,0.1202,0.1718,0.040592,7237.17,cosine,google_amazon
+intfloat/e5-mistral-7b-instruct,0.5422,0.6697,0.047287,7237.37,cosine,google_amazon
+Alibaba-NLP/gte-Qwen2-1.5B-instruct,0.6066,0.7322,0.016995,7199.51,cosine,google_amazon
