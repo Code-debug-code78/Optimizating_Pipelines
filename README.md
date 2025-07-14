@@ -11,7 +11,7 @@ In many NLP pipelines—such as entity resolution, search, or deduplication—of
 
 - How to reduce model loading time and memory usage
 - What retrieval strategies scale well for large datasets
-- Which embedding–retrieval combinations perform best on noisy, real-world tabular text
+- How different models perform on noisy dataset of [DeepMatcher (SIGMOD 2018)](https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md) 
 
 ## Project Goals
 
@@ -24,6 +24,17 @@ In many NLP pipelines—such as entity resolution, search, or deduplication—of
 
 - **Embedding Management**  
   Implemented lazy initialization, caching, and memory-mapped storage for large embedding matrices.
+  For this I went through [fastembed](https://qdrant.github.io/fastembed/) documentation. It is a lightweight, fast, Python library built for embedding generation.
+  Following are the features of fastembed: 
+  1. Light & Fast
+     - Quantized model weights
+     - ONNX Runtime for inference
+  2.  Accuracy/Recall
+     - Better than OpenAI Ada-002
+     - Default is Flag Embedding, which has shown good results on the MTEB leaderboard
+     - List of supported models - including multilingual models
+A normal working of how fastembed works is as follows: [fastembed_check](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/fastembedcheck.ipynb) 
+Then I ran some of the models which were supported by fastembed and compared those results: [here](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/fastembed%20(2).ipynb)
 
 - **Retrieval Techniques**  
   - Cosine similarity (dense)
@@ -31,10 +42,17 @@ In many NLP pipelines—such as entity resolution, search, or deduplication—of
   - Locality-Sensitive Hashing (MinHash + LSH Forest)
   - Fuzzy string matching (Levenshtein-based)
   - Combined scoring strategy using weighted or normalized hybrid matchers
+The comparison can be referred [here](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/Combined%20strategies%20(5).ipynb)
 
-- **Benchmarking & Monitoring**  
+- **Benchmarking & Monitoring**
+  Next, I was comparing how different models give varied results for different types of noisy datasets. Doing this, help us know how the models can be categoried into different types based on their working.
   Developed a performance monitor to track runtime and memory usage across loading, encoding, and retrieval phases.  
   Benchmarked 10+ models (e.g., MiniLM, GTE, E5) on real and synthetic data using Top‑1 accuracy, MRR, and latency.
+  For this I worked on the files : 
+ [benchmark_runner.py](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/benchmark_runner.py)
+ [scoring.py](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/scoring.py)
+ [plot_results.py](https://github.com/Code-debug-code78/Optimizating_Pipelines/blob/main/plot_results.py)
+  
 
 ## Evaluation Setup
 
