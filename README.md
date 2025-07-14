@@ -72,6 +72,9 @@ The comparison can be referred [here](https://github.com/Code-debug-code78/Optim
 
 - Achieved **reduction in model load time** using caching and lazy initialization
 - Enabled retrieval on 10k+ rows with minimal memory using sparse similarity and memory mapping
+- Optimized embedding pipelines for 10-fold faster model loading, enabling scalable, low-latency retrieval using fastembed
+- Used LSH, memory-mapped vectors, and sparse similarity search for efficient embedding-based retrieval
+- Benchmarked embeddings for 10+ models on noisy tabular datasets from DeepMatcher (SIGMOD’18) paper
 - Identified trade-offs:
   - Dense cosine: higher accuracy, slower
   - Sparse retrieval: fast and lightweight, slightly less accurate
