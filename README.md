@@ -39,7 +39,7 @@ In many NLP pipelines—such as entity resolution, search, or deduplication—of
 ## Evaluation Setup
 
 - **Datasets:**  
-  Used datasets from the [DeepMatcher (SIGMOD 2018)](https://pages.cs.wisc.edu/~anhai/data/) paper and generated synthetic noisy versions.
+  Used datasets from the [DeepMatcher (SIGMOD 2018)](https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md) paper and generated synthetic noisy versions.
 
 - **Tasks:**  
   Evaluate embedding–retriever combinations for exact match recovery and top-k accuracy on entity-style string columns.
